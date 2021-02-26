@@ -1,0 +1,53 @@
+<!doctype html> <!--SI 579 PS5 WN2021 By Seung Jun Kim 02/26/2021-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="snap.svg.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/luxon@1.26.0/build/global/luxon.min.js></script>
+    <script src="script.js" defer></script>
+    <title>SI 579 PS5</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row border border-bottom-0 border-primary">
+        <div class="col">
+          <span ></span>
+          <h1 class="text-center">SI 579 Problem Set 5</h1>
+        </div>
+      </div>
+      <div class="row border border-top-0 border-primary">
+        <div class="col">
+          <h2 class="text-center">By Seung Jun Kim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">Brief Introduction</h3>
+          <p>For this Problem Statement I utilized Bootstrap to organize the layout of this page.
+            I also utilized two Javascript libraries. One of them is Snap SVG; in this section of 
+            the page user's can hover over the circle to change the color of the circle. The second
+            library is luxon which is similar to moment.js and allows a user to find his/her current time-zone and time.
+            It also allows the user to find other the current time in other time-zones but it has to be formatted a certain way.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border border-secondary">
+          <h4 class="text-center">Snap SVG</h4>
+          <svg id="svg"></svg>
+        </div>
+        <div class="col border border-secondary">
+          <h4 class="text-center">Luxon</h4>
+          <p id="localLocation">Your Time zone: </p>
+          <p id="localTime">Your Current Time: </p>
+          <label for="input">Type in a country/city (in this format e.g. America/New_York)</label>
+          <input type="text" id="input" name="input" placeholder="e.g. Asia/Seoul"><br>
+          <p id="timeZone"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
